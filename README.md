@@ -19,6 +19,8 @@ The core goals of this project is to demonstrates how calculus enables learning 
 
 We consider a simple **2–2–1 feedforward neural network**:
 
+![Network architecture](images/2-2-1NN.png)
+
 - **Input layer:** 2 features  
 - **Hidden layer:** 2 neurons (with activation function, e.g., sigmoid)  
 - **Output layer:** 1 neuron (for regression or binary classification)  
@@ -42,7 +44,9 @@ The report and code discuss:
   - Linear layers (`z = Wx + b`)  
   - Activation functions (e.g., sigmoid derivative)  
   - Loss with respect to outputs and intermediate variables  
-- How local gradients compose to form global gradients across the network  
+- How local gradients compose to form global gradients across the network 
+
+![Backpropagation in Neural Network](images/Backpropagation.png)
 
 ---
 
@@ -52,7 +56,32 @@ The report and code discuss:
 calculus-neural-networks/
 ├── README.md                     # Project overview (this file)
 ├── report/
-│   ├── CalcCalculus_Behind_Neural_Networkss.pdf   # Final project 
+│   ├── Calculus_Behind_Neural_Networkss.pdf   # Final project 
+│   ├── Calculus-Behind-Neural-Networkss.pdf   # Presentation
 └── src/
-    ├── manual_NN.ipynb             
-    └── sklearn_NN.ipynb
+│   ├── manual_NN.ipynb             
+│   └── sklearn_NN.ipynb
+│   
+└── images/ 
+       ├── 2-2-1.png             
+       └── Backpropagation.png
+
+
+## 📄 Project Documents
+
+This repository includes both the full project report and the final presentation slides:
+
+- **Report:** `report/Calculus_Behind_Neural_Networks.pdf`
+- **Presentation:** `report/Calculus-Behind-Neural-Networks.pdf`
+
+## 📊 Summary of Findings
+
+Results
+• Successfully computed all gradients for a real network example
+• Performed one full weight-update step using gradient descent
+• Confirmed that parameter updates follow gradient direction
+
+Conclusion
+• Chain rule enables backpropagation.
+• Partial derivatives show how each parameter affects loss.
+• Without calculus, neural networks cannot learn, calculus is the learning engine.
