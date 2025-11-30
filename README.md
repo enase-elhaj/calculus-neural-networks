@@ -85,3 +85,11 @@ Conclusion
 • Chain rule enables backpropagation.
 • Partial derivatives show how each parameter affects loss.
 • Without calculus, neural networks cannot learn, calculus is the learning engine.
+
+## Author
+
+**Enas Elhaj, MSc**  
+Applied Artificial Intelligence & Data Science  
+University of Denver  
+
+GitHub: [https://github.com/enase-elhaj](https://github.com/enase-elhaj)
